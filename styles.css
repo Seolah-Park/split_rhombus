@@ -1,0 +1,42 @@
+body {
+    background-image: url('background6.png'); /* 이미지 경로를 지정하세요 */
+    background-size: cover; /* 배경 이미지를 화면에 꽉 차게 설정 */
+    background-repeat: no-repeat; /* 배경 이미지 반복 설정 */
+    background-position: center; /* 배경 이미지를 가운데 정렬 */
+    background-color: #ececec;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Diphylleia', cursive; /* 필기체 글꼴 지정 */
+}
+
+.container {
+    text-align: center;
+    position: relative; /* 결과 컨테이너의 위치 지정을 위해 부모 요소를 상대적으로 설정 */
+}
+
+#fortune-cookie-container {
+    display: inline-block; /* 이미지를 인라인 블록 요소로 지정하여 가로 중앙 정렬을 유지 */
+    cursor: pointer; /* 마우스 커서를 포인터로 변경하여 클릭 가능한 것임을 나타냄 */
+}
+
+#fortune-cookie-image {
+    width: 300px; /* 이미지의 가로 크기 */
+    height: auto; /* 이미지의 세로 크기를 가로 크기에 맞게 자동 조정 */
+}
+
+#fortune-result-container {
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+    max-width: 100%; /* 최대 너비 지정 */
+    margin: auto; /* 가운데 정렬 */
+    bottom: -10px; /* 버튼 아래에 위치하도록 설정 */
+    text-shadow: 0px 0px 10px #00c533;
+}
+
+.hidden {
+    display: none;
+}
